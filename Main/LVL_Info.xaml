@@ -1,0 +1,23 @@
+﻿<Window x:Class="Main.LVL_Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Main"
+        mc:Ignorable="d"
+        Height="500" Width="500" WindowStyle="ToolWindow" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources\board.jpg" Viewport="0,0,0.2,0.2" TileMode="FlipXY"/>
+        </Grid.Background>
+        
+        <ScrollViewer x:Name="SCRLViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="20">
+            <ListBox x:Name="lstBOX" IsHitTestVisible="False">
+                <ListBox.Background>
+                    <ImageBrush ImageSource="Resources\BG.png" Viewport="0,0,0.2,0.2" TileMode="FlipXY"/>
+                </ListBox.Background>
+            </ListBox>
+        </ScrollViewer>
+    </Grid>
+</Window>
